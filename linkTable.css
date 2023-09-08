@@ -1,0 +1,137 @@
+:root
+{
+    --bright: rgb(10, 76, 208);
+    --white: rgb(178, 161, 245);
+    --dark: rgb(17, 0, 87);
+    --black: rgb(6, 0, 31);
+}
+
+*
+{
+    margin: auto;
+}
+
+div
+{
+    background-color: var(--dark);
+}
+
+h1
+{
+    padding: 10px;
+    margin: auto;
+    font-size: 50px;
+
+}
+
+body
+{
+    margin: 0;
+    background-color: var(--bright);
+    color: white;
+    font-family: sans-serif;
+}
+
+table
+{
+    margin: auto;
+    background-color: var(--white);
+    width: 100%;
+}
+
+div#slideshowDiv
+{
+    overflow: hidden;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--black);
+}
+
+img#slideshow
+{
+    opacity: initial;
+    filter: none;
+    object-fit: contain;
+    margin: 70px;
+    max-width: 100%;
+}
+
+img[src$=".png"].tableImg
+{
+    margin-left: 20%;
+}
+
+img.tableImg
+{
+    width: 70%;
+    opacity: 50%;
+    filter: saturate(20%);
+    transition: opacity 0.1s ease-in-out, filter 0.1s ease-in-out, transform 0.1s ease-in-out;
+    background-color: transparent;
+    object-fit: scale-down;
+}
+
+div#slideshowButtons
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+}
+
+input.slideshowButton
+{
+    margin: 10px;
+    margin-right: 70px;
+    margin-left: 70px;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 5px;
+    outline: 0px;
+    border: 0;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out, width 0.7s ease-in-out;
+    color: white;
+    background-color: var(--dark);
+    width: 200px;
+}
+
+input.slideshowButton:hover
+{
+    color: black;
+    background-color: var(--white);
+    width: 50vw;
+}
+
+td
+{
+    background-color: black;
+}
+
+td:hover
+{
+    box-shadow: 1px 1px 50px rgb(44, 44, 255) inset;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+td:hover img,
+td:hover a
+{
+    opacity: 100%;
+    filter: saturate(200%);
+    transform: scale(105%);
+}
+
+a
+{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: larger;
+    text-decoration: none;
+    color: white;
+}
+
+.centerer
+{
+    margin: auto;
+    width: 40%;
+}
