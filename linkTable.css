@@ -94,7 +94,7 @@ input.slideshowButton
     border-radius: 5px;
     outline: 0px;
     border: 0;
-    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out, width 0.7s ease-in-out;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out, width 0.3s ease-in-out;
     color: white;
     background-color: var(--dark);
     width: 200px;
@@ -104,7 +104,7 @@ input.slideshowButton:hover
 {
     color: black;
     background-color: var(--white);
-    width: 50vw;
+    width: clamp(210px,50vw,300px);
 }
 
 td
