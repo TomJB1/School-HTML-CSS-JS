@@ -5,18 +5,28 @@ lastButton = document.getElementById("lastPic");
 nextButton.addEventListener("click", NextPicture);
 lastButton.addEventListener("click", LastPicture);
 
-let pictureNames = ["mySite.png", "ecosia.webp", "google.webp"]
-
+let pictureNames = ["pictures/scenery1.jpg", "pictures/scenery2.webp", "pictures/scenery3.jpg", "pictures/scenery4.jpg"]
 let imageNum = 0;
+let autoNext = true;
 
-function NextPicture()
+function NextPicture(){ ManualChange(1); }
+
+function LastPicture(){ ManualChange(-1); }
+
+
+function ManualChange(amount)
 {
-    ChangePic(1);
+    autoNext = false;
+    setTimeout(() => autoNext = true, 10000);
+    ChangePic(amount);
 }
 
-function LastPicture()
+function AutoNext()
 {
-    ChangePic(-1);
+    if(autoNext)
+    {
+        ChangePic(1);
+    }
 }
 
 function ChangePic(amount)
@@ -32,3 +42,5 @@ function ChangePic(amount)
     }
     image.src = pictureNames[imageNum];
 }
+
+setInterval(AutoNext, 5000); 
