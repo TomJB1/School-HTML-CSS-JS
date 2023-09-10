@@ -1,9 +1,11 @@
-image = document.getElementById("slideshow");
-nextButton = document.getElementById("nextPic");
-lastButton = document.getElementById("lastPic");
+document.addEventListener("DOMContentLoaded", () => {
+    image = document.getElementById("slideshow");
+    nextButton = document.getElementById("nextPic");
+    lastButton = document.getElementById("lastPic");
+    nextButton.addEventListener("click", () => ManualChange(1));
+    lastButton.addEventListener("click", () => ManualChange(-1));
+  });
 
-nextButton.addEventListener("click", () => ManualChange(1));
-lastButton.addEventListener("click", () => ManualChange(-1));
 
 let pictureNames = ["pictures/scenery1.jpg", "pictures/scenery2.webp", "pictures/scenery3.jpg", "pictures/scenery4.jpg"]
 let imageNum = 0;
@@ -19,10 +21,7 @@ function ManualChange(amount)
 
 function AutoNext()
 {
-    if(autoNext)
-    {
-        ChangePic(1);
-    }
+    if(autoNext) ChangePic(1);
 }
 
 function ChangePic(amount)
