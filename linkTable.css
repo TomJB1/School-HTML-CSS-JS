@@ -108,21 +108,21 @@ input.slideshowButton:hover
     width: clamp(210px,50vw,300px);
 }
 
-td
+td.linkGrid
 {
     background-color: black;
     height: 400px;
     overflow: hidden;
 }
 
-td:hover
+td.linkGrid:hover
 {
     box-shadow: 1px 1px 50px rgb(44, 44, 255) inset;
     transition: box-shadow 0.1s ease-in-out;
 }
 
-td:hover img,
-td:hover a
+td.linkGrid:hover img,
+td.linkGrid:hover a
 {
     opacity: 100%;
     filter: saturate(200%);
@@ -145,4 +145,28 @@ a
 {
     margin: auto;
     width: 40%;
+}
+
+#id
+{
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+#formInput > input
+{
+    width: 10vw;
+    transition: width .3s ease-in-out;
+}
+
+#formInput > input:focus
+{
+    width: 30vw;
+}
+
+#contact
+{
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.2s ease-in-out;
 }
