@@ -111,6 +111,7 @@ td
 {
     background-color: black;
     height: 400px;
+    overflow: hidden;
 }
 
 td:hover
