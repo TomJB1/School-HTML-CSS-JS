@@ -75,6 +75,7 @@ img.tableImg
     transition: opacity 0.1s ease-in-out, filter 0.1s ease-in-out, transform 0.1s ease-in-out;
     background-color: transparent;
     object-fit: scale-down;
+    max-height: 100%;
 }
 
 div#slideshowButtons
