@@ -37,7 +37,12 @@ body
     font-family: sans-serif;
 }
 
-table
+textarea
+{
+    font-family: sans-serif;
+}
+
+table#linkTable
 {
     margin: auto;
     background-color: var(--white);
@@ -147,19 +152,13 @@ a
     width: 40%;
 }
 
-#id
-{
-    overflow: hidden;
-    transition: height 0.5s ease-in-out;
-}
-
-#formInput > input
+input.expandingTextBox
 {
     width: 10vw;
     transition: width .3s ease-in-out;
 }
 
-#formInput > input:focus
+input.expandingTextBox:focus
 {
     width: 30vw;
 }
@@ -169,4 +168,14 @@ a
     height: 0px;
     overflow: hidden;
     transition: height 0.2s ease-in-out;
+}
+
+#contactButton
+{
+    border: 0;
+    font-size: 20px;
+    background: #000f63;
+    color: white;
+    margin: 5px;
+    border-radius: 2px;
 }

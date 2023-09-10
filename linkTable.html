@@ -22,21 +22,25 @@
     <input id="contactButton" type="button" value="contact us">
     <div id="contact">
         <form>
-            <div>
-                <label>Name:</label><br>
-                <label>Email:</label><br>
-                <label>Message:</label>
-            </div>
-            <div id="formInput">
-                <input type="text" name="name"><br>
-                <input type="text" name="email"><br>
-                <textarea type="text" name="message" rows="3"></textarea></label><br>
-            </div>
+            <table width="800">
+                <TR>
+                    <TD width="10%"><label>Name:</label></TD>
+                    <TD><input class="expandingTextBox" type="text" name="name"></TD>
+                </TR>
+                <TR>
+                    <TD><label>Email:</label></TD>
+                    <TD><input class="expandingTextBox" type="text" name="email"></TD>
+                </TR>
+                <TR>
+                    <TD><label>Message:</label></TD>
+                    <TD><textarea cols="50" type="text" name="message" rows="3"></textarea></TD>
+                </TR>
+            </table>
             
             <input type="submit" value="Submit">
         </form>
     </div>
-    <table width="800" height="800" border="1">
+    <table id="linkTable" width="800" height="800" border="1">
         <TR class="linkGrid">
             <TD class="linkGrid" width="50%" ><a href="https://google.com" target="_blank"><img class="tableImg" src="google.webp"></a></TD>
             <TD class="linkGrid"><a href="https://bing.com" target="_blank"> <img class="tableImg" src="bing.webp"></a></TD>
