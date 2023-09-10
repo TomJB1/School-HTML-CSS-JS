@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     image = document.getElementById("slideshow");
-    nextButton = document.getElementById("nextPic");
-    lastButton = document.getElementById("lastPic");
-    nextButton.addEventListener("click", () => ManualChange(1));
-    lastButton.addEventListener("click", () => ManualChange(-1));
-  });
+    document.getElementById("nextPic").addEventListener("click", () => ManualChange(1));
+    document.getElementById("lastPic").addEventListener("click", () => ManualChange(-1));
+    });
 
 
 let pictureNames = ["pictures/scenery1.jpg", "pictures/scenery2.webp", "pictures/scenery3.jpg", "pictures/scenery4.jpg"]
