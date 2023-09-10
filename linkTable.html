@@ -22,7 +22,7 @@
     <input id="contactButton" type="button" value="contact us">
     <div id="contact">
         <form>
-            <table width="800">
+            <table id="contactTable" width="800">
                 <TR>
                     <TD width="10%"><label>Name:</label></TD>
                     <TD><input class="expandingTextBox" type="text" name="name"></TD>
@@ -35,11 +35,14 @@
                     <TD><label>Message:</label></TD>
                     <TD><textarea cols="50" type="text" name="message" rows="3"></textarea></TD>
                 </TR>
+                <TR>
+                    <TD></TD>
+                    <TD><input type="submit" value="Submit"></TD>
+                </TR>
             </table>
-            
-            <input type="submit" value="Submit">
         </form>
     </div>
+
     <table id="linkTable" width="800" height="800" border="1">
         <TR class="linkGrid">
             <TD class="linkGrid" width="50%" ><a href="https://google.com" target="_blank"><img class="tableImg" src="google.webp"></a></TD>

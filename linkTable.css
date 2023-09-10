@@ -42,6 +42,11 @@ textarea
     font-family: sans-serif;
 }
 
+table#contactTable
+{
+    margin: 20px;
+}
+
 table#linkTable
 {
     margin: auto;
