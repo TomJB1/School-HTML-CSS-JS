@@ -6,7 +6,7 @@
     <title>Link table</title>
     <link rel="stylesheet" href="linkTable.css">
     <script defer src="slideshow.js"></script>
-    <script src="contactDropdown.js"></script>
+    <script defer src="contactDropdown.js"></script>
 </head>
 <body>
     <div id="slideshowDiv">
@@ -19,8 +19,10 @@
     <div>
         <h1>Meaningless Header</h1>
     </div>
-    <input id="contactButton" type="button" value="contact us">
-    <div id="contact">
+    <input class="dropdownButton" id="contactButton" type="button" value="contact us">
+    <input class="dropdownButton" id="pricesButton" type="button" value="prices">
+    <input class="dropdownButton" id="mapButton" type="button" value="find us">
+    <div id="contact" class="dropdown">
         <form>
             <table id="contactTable" width="800">
                 <TR>
@@ -41,6 +43,14 @@
                 </TR>
             </table>
         </form>
+    </div>
+
+    <div id="contact" class="dropdown">
+        <p>other dropdown</p>
+    </div>
+
+    <div id="contact" class="dropdown">
+        <p>third dropdown</p>
     </div>
 
     <table id="linkTable" width="800" height="800" border="1">
