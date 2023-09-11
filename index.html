@@ -3,29 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Link table</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script defer src="scripts/slideshow.js"></script>
+    <script defer src="scripts/contactDropdown.js"></script>
 </head>
-<body background="iphoneServer-1200.jpg" >
-    <marquee width="50%" >Moving</marquee><br>
-    <b>Test</b>
-    <a href="https://tombrandis.uk.tombrandis" target="_blank">Link</a>
-    <div class="box">
-        <h1>Title</h1>
-        <ul>
-            <p>one</p>
-        </ul>
+<body>
+    <div id="slideshowDiv">
+        <img id="slideshow" src="pictures/scenery1.jpg">
     </div>
-    <table width="800" border="1">
-        <TR bgcolor="red ">
-            <TD width="20%">one</TD>
-            <TD>two</TD>
+    <div id="slideshowButtons">
+        <input id="lastPic" class="slideshowButton" type="button" value="previous">
+        <input id="nextPic" class="slideshowButton" type="button" value="next">
+    </div>
+    <div>
+        <h1>Meaningless Header</h1>
+    </div>
+    <input class="dropdownButton" id="contactButton" type="button" value="contact us">
+    <input class="dropdownButton" id="pricesButton" type="button" value="prices">
+    <input class="dropdownButton" id="mapButton" type="button" value="find us">
+    <div id="contact" class="dropdown">
+        <form>
+            <table id="contactTable" width="800">
+                <TR>
+                    <TD width="10%"><label>Name:</label></TD>
+                    <TD><input class="expandingTextBox" type="text" name="name"></TD>
+                </TR>
+                <TR>
+                    <TD><label>Email:</label></TD>
+                    <TD><input class="expandingTextBox" type="text" name="email"></TD>
+                </TR>
+                <TR>
+                    <TD><label>Message:</label></TD>
+                    <TD><textarea cols="50" type="text" name="message" rows="3"></textarea></TD>
+                </TR>
+                <TR>
+                    <TD></TD>
+                    <TD><input type="submit" value="Submit"></TD>
+                </TR>
+            </table>
+        </form>
+    </div>
+
+    <div id="prices" class="dropdown">
+        <p>other dropdown</p>
+    </div>
+
+    <div id="map" class="dropdown">
+        <p>third dropdown</p>
+    </div>
+
+    <table id="linkTable" width="800" height="800" border="1">
+        <TR class="linkGrid">
+            <TD class="linkGrid" width="50%" ><a href="https://google.com" target="_blank"><img class="tableImg" src="pictures/google.webp"></a></TD>
+            <TD class="linkGrid"><a href="https://bing.com" target="_blank"> <img class="tableImg" src="pictures/bing.webp"></a></TD>
         </TR>
-        <TR>
-            <font size="20">
-                <TD>three</TD>
-                <TD>four</TD>
-            </font>
+        <TR class="linkGrid">
+            <TD class="linkGrid" ><a href="https://search.yahoo.com/web" target="_blank"><img class="tableImg" src="pictures/yahoo.webp"></a></TD>
+            <TD class="linkGrid"><a href="https://www.ecosia.org/search" target="_blank"><img class="tableImg" src="pictures/ecosia.webp"></a></TD>
+        </TR>
+        <TR class="linkGrid">
+            <TD class="linkGrid"><a href="https://tombrandis.uk.to"><p>My Website</p></a></TD>
+            <TD class="linkGrid"><a href="https://tombrandis.uk.to"><img class="tableImg" src="pictures/mySite.png"></a></TD>
         </TR>
     </table>
 </body>
