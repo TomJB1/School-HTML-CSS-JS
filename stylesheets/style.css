@@ -42,6 +42,17 @@ textarea
     font-family: sans-serif;
 }
 
+h2
+{
+    font-size: 30px;
+    margin: 7px;
+}
+
+.mapouter
+{
+    margin-top: 20px;
+}
+
 table#contactTable
 {
     margin: 20px;
@@ -184,4 +195,9 @@ input.expandingTextBox:focus
     color: white;
     margin: 5px;
     border-radius: 2px;
+}
+
+#priceList
+{
+    margin-top: 30px;
 }
