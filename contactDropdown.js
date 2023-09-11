@@ -8,20 +8,26 @@ contactDiv = document.getElementById("contact");
 let tArray = Array(buttons.length).fill(0);
 //0 up, 1 down
 
-function minimiseAll()
+function minimiseAllExcept(num)
 {
-    tArray.fill(0);
     for (let i = 0; i < buttons.length; i++) {
-        dropdown[i].style.height = "0px";
+        if(i != num)
+        {
+            tArray[i] = 0;
+            dropdown[i].style.height = "0px";
+            setTimeout(() => dropdown[i].style.display = "none", 1);
+        }  
     }
 }
 
 
 function toggleDropdown(buttonNum)
 {
-    minimiseAll();
+    minimiseAllExcept(buttonNum);
+    dropdown[buttonNum].style.display = "block";
     t = tArray[buttonNum];
     t = [1, 0][t];
     tArray[buttonNum] = t;
-    dropdown[buttonNum].style.height = 200*t + "px";
+    setTimeout(() => dropdown[buttonNum].style.height = 200*t + "px", 1);
+    
 }

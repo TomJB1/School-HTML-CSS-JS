@@ -169,7 +169,7 @@ input.expandingTextBox:focus
     width: 30vw;
 }
 
-#contact
+.dropdown
 {
     height: 0px;
     overflow: hidden;
