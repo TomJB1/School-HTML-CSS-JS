@@ -24,9 +24,16 @@ function AutoNext()
 
 function ChangePic(amount)
 {
-    imageNum += amount;
-    imageNum = (imageNum%length + length)%length;
-    image.src = pictureNames[imageNum];
+    image.style.opacity = "0";
+    setTimeout(() => image.style.opacity = "1", 500);
+    setTimeout(() => 
+    {
+        imageNum += amount;
+        imageNum = (imageNum%length + length)%length;
+        image.src = pictureNames[imageNum];
+    }, 400);
+    
+    
 }
 
 setInterval(AutoNext, 5000); 
