@@ -1,7 +1,7 @@
 :root
 {
     --bright: rgb(10, 76, 208);
-    --white: rgb(178, 161, 245);
+    --white: rgb(218, 209, 255);
     --dark: rgb(17, 0, 87);
     --black: rgb(6, 0, 31);
 }
@@ -68,7 +68,7 @@ table#linkTable
 div#slideshowDiv
 {
     overflow: hidden;
-    height: 70vh;
+    height: 78vh;
     display: flex;
     justify-content: center;
     background-color: var(--black);
