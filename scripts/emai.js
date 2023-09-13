@@ -7,5 +7,5 @@ form.addEventListener("submit", sendEmail)
 function sendEmail(event)
 {
     event.preventDefault();
-    emailjs.sendForm("default_service", "template_grtqs5l", form);
+    emailjs.sendForm("service_afcnll8", "template_grtqs5l", form);
 }
