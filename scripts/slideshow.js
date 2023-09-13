@@ -32,4 +32,4 @@ function ChangePic(amount)
     
 }
 
-setInterval(AutoNext, 5000); 
+setInterval(AutoNext, 8000); 
