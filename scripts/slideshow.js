@@ -1,7 +1,7 @@
 image = document.getElementById("slideshow");
 document.getElementById("nextPic").addEventListener("click", () => ManualChange(1));
 document.getElementById("lastPic").addEventListener("click", () => ManualChange(-1));
-let pictureNames = ["pictures/scenery1.jpg", "pictures/scenery2.webp", "pictures/scenery3.jpg", "pictures/scenery4.jpg"]
+let pictureNames = ["pictures/chocolateCake.webp", "pictures/honecombCake.jpg", "pictures/redVelvetCake.jpg", "pictures/victoriaSpongCake.jpg"]
 let imageNum = 0;
 let autoNext = true;
 let length = pictureNames.length;
