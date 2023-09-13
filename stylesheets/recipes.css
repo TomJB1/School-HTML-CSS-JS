@@ -1,0 +1,41 @@
+*
+{
+    font-family: sans-serif;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1
+{
+    font-size: 50px;
+}
+
+h2
+{
+    text-decoration: underline;
+}
+
+li
+{
+    font-size: 20px;
+    margin: 10px;
+}
+
+ul,
+ol
+{
+    width: 90%;
+    margin: auto;
+}
+
+img
+{
+    border-radius: 10px;
+    margin: auto;
+}
+
+#footer
+{
+    height: 40px;
+}
