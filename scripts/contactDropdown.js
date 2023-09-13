@@ -22,11 +22,11 @@ function minimiseAllExcept(num)
 function toggleDropdown(buttonNum)
 {
     minimiseAllExcept(buttonNum);
-    dropdown[buttonNum].style.display = "block";
+    dropdown[buttonNum].style.display = "flex";
     t = tArray[buttonNum];
     t = [1, 0][t];
     tArray[buttonNum] = t;
-    setTimeout(() => dropdown[buttonNum].style.height = 500*t + "px", 1);
+    setTimeout(() => dropdown[buttonNum].style.height = 800*t + "px", 1);
     if(t==1) window.scroll({top: buttons[0].getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth'});
     
 }

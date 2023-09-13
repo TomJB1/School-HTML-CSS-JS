@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <script defer src="scripts/slideshow.js"></script>
     <script defer src="scripts/contactDropdown.js"></script>
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script defer src="scripts/emai.js"></script>
 </head>
 <body>
     <div id="slideshowDiv">
@@ -26,27 +28,37 @@
     </div>
  
     <div id="contact" class="dropdown">
-        <form>
-            <table id="contactTable" width="800">
-                <h2>Drop us a message!</h2>
-                <TR>
-                    <TD width="10%"><label>Name:</label></TD>
-                    <TD><input class="expandingTextBox" type="text" name="name"></TD>
-                </TR>
-                <TR>
-                    <TD><label>Email:</label></TD>
-                    <TD><input class="expandingTextBox" type="text" name="email"></TD>
-                </TR>
-                <TR>
-                    <TD><label>Message:</label></TD>
-                    <TD><textarea cols="50" type="text" name="message" rows="15"></textarea></TD>
-                </TR>
-                <TR>
-                    <TD></TD>
-                    <TD><input type="submit" value="Submit"></TD>
-                </TR>
-            </table>
-        </form>
+        <div id="messageContainer" class="contactType">
+            <form id="contactForm">
+                <table id="contactTable" width="200">
+                    <h2>Drop us a message!</h2>
+                    <TR>
+                        <TD width="10%"><label>Name:</label></TD>
+                        <TD><input class="expandingTextBox" type="text" name="name"></TD>
+                    </TR>
+                    <TR>
+                        <TD><label>Email:</label></TD>
+                        <TD><input class="expandingTextBox" type="text" name="email"></TD>
+                    </TR>
+                    <TR>
+                        <TD><label>Message:</label></TD>
+                        <TD><textarea cols="50" type="text" name="message" rows="15"></textarea></TD>
+                    </TR>
+                    <TR>
+                        <TD></TD>
+                        <TD><input type="submit" value="Submit"></TD>
+                    </TR>
+                </table>
+            </form>
+        </div>
+        <div id="emailContainer" class="contactType">
+            <h1>Email us</h1>
+            <p>random@gmail.com</p>
+        </div>
+        <div id="smsContainer" class="contactType">
+            <h1>Text us</h1>
+            <p>07912 883 929</p>
+        </div>
     </div>
 
     <div id="prices" class="dropdown">

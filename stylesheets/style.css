@@ -48,6 +48,12 @@ h2
     margin: 7px;
 }
 
+#contact
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .mapouter
 {
     margin-top: 20px;
