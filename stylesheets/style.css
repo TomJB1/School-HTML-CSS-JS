@@ -64,6 +64,11 @@ table#contactTable
     margin: 20px;
 }
 
+#prices
+{
+    flex-direction: column;
+}
+
 table#linkTable
 {
     margin: auto;
