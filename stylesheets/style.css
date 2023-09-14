@@ -93,6 +93,7 @@ img#slideshow
     margin: 20px;
     border-radius: 30px;
     transition: opacity 0.5s ease-in-out;
+    box-shadow: #0d0045 0px 0px 100px;
 }
 
 img[src$=".png"].tableImg
@@ -115,7 +116,7 @@ div#slideshowButtons
 {
     display: flex;
     justify-content: space-between;
-    background-color: var(--black);
+    background-color: rgb(8, 0, 43);
 }
 
 input.slideshowButton
