@@ -1,5 +1,6 @@
 buttons = document.querySelectorAll(".dropdownButton");
 dropdown = document.querySelectorAll(".dropdown");
+scrollPos = buttons[0].getBoundingClientRect().top + window.scrollY - 70;
 for (let i = 0; i < buttons.length; i++)
 {
     buttons[i].addEventListener("click", () => toggleDropdown(i));
@@ -13,8 +14,9 @@ function minimiseAllExcept(num)
     for (let i = 0; i < buttons.length; i++) {
         if(i == num) continue;
         tArray[i] = 0;
-        dropdown[i].style.height = "0px";
-        setTimeout(() => dropdown[i].style.display = "none", 1);
+        dropdownStyle = dropdown[i].style;
+        dropdownStyle.height = "0px";
+        setTimeout(() => dropdownStyle.display = "none", 1);
     }
 }
 
@@ -22,11 +24,9 @@ function minimiseAllExcept(num)
 function toggleDropdown(buttonNum)
 {
     minimiseAllExcept(buttonNum);
-    dropdown[buttonNum].style.display = "flex";
-    t = tArray[buttonNum];
-    t = [1, 0][t];
-    tArray[buttonNum] = t;
-    setTimeout(() => dropdown[buttonNum].style.height = 800*t + "px", 1);
-    if(t==1) window.scroll({top: buttons[0].getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth'});
-    
+    buttonStyle = dropdown[buttonNum].style;
+    buttonStyle.display = "flex";
+    tArray[buttonNum] = t = [1, 0][t = tArray[buttonNum]];
+    setTimeout(() => buttonStyle.height = 800*t + "px", 1);
+    if(t==1) window.scroll({top: scrollPos, behavior: 'smooth'});
 }
