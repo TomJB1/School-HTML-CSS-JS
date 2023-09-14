@@ -13,11 +13,6 @@ function ManualChange(amount)
     ChangePic(amount);
 }
 
-function AutoNext()
-{
-    if(autoNext) ChangePic(1);
-}
-
 function ChangePic(amount)
 {
     image.style.opacity = "0";
@@ -32,4 +27,4 @@ function ChangePic(amount)
     
 }
 
-setInterval(AutoNext, 8000); 
+setInterval(() => {if(autoNext) ChangePic(1);}, 8000); 
