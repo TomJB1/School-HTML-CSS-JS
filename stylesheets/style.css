@@ -25,8 +25,8 @@ h1
 {
     padding: 10px;
     margin: auto;
-    font-size: 50px;
-
+    font-size: 80px;
+    font-family: "Josefin Slab";
 }
 
 body
@@ -79,7 +79,7 @@ table#linkTable
 div#slideshowDiv
 {
     overflow: hidden;
-    height: 78vh;
+    height: 73vh;
     display: flex;
     justify-content: center;
     background-color: var(--black);
