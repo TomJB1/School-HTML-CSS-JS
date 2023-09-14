@@ -16,7 +16,7 @@ function minimiseAllExcept(num)
         tArray[i] = 0;
         dropdownStyle = dropdown[i].style;
         dropdownStyle.height = "0px";
-        setTimeout(() => dropdownStyle.display = "none", 1);
+        dropdownStyle.display = "none";
     }
 }
 
@@ -27,6 +27,6 @@ function toggleDropdown(buttonNum)
     buttonStyle = dropdown[buttonNum].style;
     buttonStyle.display = "flex";
     tArray[buttonNum] = t = [1, 0][t = tArray[buttonNum]];
-    setTimeout(() => buttonStyle.height = 800*t + "px", 1);
+    setTimeout(() => buttonStyle.height = 800*t + "px", 100);
     if(t==1) window.scroll({top: scrollPos, behavior: 'smooth'});
 }
