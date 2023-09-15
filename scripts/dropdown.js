@@ -24,9 +24,9 @@ function minimiseAllExcept(num)
 function toggleDropdown(buttonNum)
 {
     minimiseAllExcept(buttonNum);
-    buttonStyle = dropdown[buttonNum].style;
-    buttonStyle.display = "flex";
+    dropdownStyle = dropdown[buttonNum].style;
+    dropdownStyle.display = "flex";
     tArray[buttonNum] = t = [1, 0][t = tArray[buttonNum]];
-    setTimeout(() => buttonStyle.height = 800*t + "px", 100);
+    setTimeout(() => dropdownStyle.height = 800*t + "px", 100);
     if(t==1) window.scroll({top: scrollPos, behavior: 'smooth'});
 }
