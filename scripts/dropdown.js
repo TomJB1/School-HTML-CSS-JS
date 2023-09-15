@@ -1,6 +1,6 @@
 buttons = document.querySelectorAll(".dropdownButton");
 dropdown = document.querySelectorAll(".dropdown");
-scrollPos = buttons[0].getBoundingClientRect().top + window.scrollY - 70;
+scrollPos = buttons[0].getBoundingClientRect().top + window.scrollY - 120;
 for (let i = 0; i < buttons.length; i++)
 {
     buttons[i].addEventListener("click", () => toggleDropdown(i));
