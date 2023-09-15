@@ -7,9 +7,6 @@ function sendEmail(event)
     emailjs.sendForm("service_afcnll8", "template_grtqs5l", form)
     .then(function(response)
     {
-        if(response.status == "200")
-        {
-            document.getElementById("messageSubmit").value = "Message Sent";
-        }
+        if(response.status == "200") document.getElementById("messageSubmit").value = "Message Sent";
     });
 }
