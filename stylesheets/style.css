@@ -197,6 +197,7 @@ input.expandingTextBox:focus
     height: 0px;
     overflow: hidden;
     transition: height 0.2s ease-in-out;
+    background-image: linear-gradient(var(--dark) 60%, black);
 }
 
 .dropdownButton
@@ -217,4 +218,9 @@ input.expandingTextBox:focus
 #priceList
 {
     margin-top: 30px;
+}
+
+.dropdown div 
+{
+    background-color: transparent;
 }
